@@ -3,6 +3,7 @@ using Cosmetics.Contracts;
 using Cosmetics.Products;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace Cosmetics.UnitTests.ProductTest
 {
@@ -81,7 +82,7 @@ namespace Cosmetics.UnitTests.ProductTest
         public void CreateToothpasteWhenValidValuesArePassed()
         {
             // Arrange, Act
-            var toothpaste = new Toothpaste("name", "brand", 10m, GenderType.Women, "ingredients");
+            var toothpaste = new Toothpaste("name", "brand", 10m, GenderType.Women, new List<string> { "ingredients" });
 
             // Assert
             Assert.IsInstanceOfType(toothpaste, typeof(IProduct));

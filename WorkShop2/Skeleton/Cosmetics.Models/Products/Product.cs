@@ -1,25 +1,27 @@
-﻿using Cosmetics.Common;
+﻿using System;
 using Cosmetics.Contracts;
-using System;
+using Cosmetics.Common;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace Cosmetics.Products
 {
-    public class Toothpaste : IToothpaste, IProduct
+    public abstract class Product : IProduct
     {
         private string name;
         private string brand;
         private decimal price;
-        private GenderType gender;
-        private string ingredients;       
+        private GenderType gender;        
 
         public string Name
         {
             get => this.name;
             set
             {
+                if (value == null)
+                {
+                    throw new ArgumentNullException();
+                }
                 if (value.Length < 3 || 10 < value.Length)
                 {
                     throw new ArgumentOutOfRangeException();
@@ -33,6 +35,10 @@ namespace Cosmetics.Products
             get => this.brand;
             set
             {
+                if (value == null)
+                {
+                    throw new ArgumentNullException();
+                }
                 if (value.Length < 2 || 10 < value.Length)
                 {
                     throw new ArgumentOutOfRangeException();
@@ -59,42 +65,29 @@ namespace Cosmetics.Products
             get => this.gender;
             set
             {
-                GenderType parsedGender;
-                bool isValid = Enum.TryParse(value.ToString(), out parsedGender);
+                GenderType genderParsed;
+                bool isValid = Enum.TryParse(value.ToString(), out genderParsed);
+
                 if (!isValid)
                 {
                     throw new ArgumentException();
                 }
-                this.gender = parsedGender;
+                this.gender = genderParsed;
             }
-        }
+        }               
 
-        public string Ingredients
-        {
-            get => this.ingredients;
-            set
-            {
-                List<string> ingredient = value.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                StringBuilder sb = new StringBuilder();
-
-                sb.Append(string.Join(", ", ingredient));
-
-                this.ingredients = sb.ToString();
-            }
-        }
-
-        public Toothpaste(string name, string brand, decimal price, GenderType gender, string ingredients)
+        public Product(string name, string brand, decimal price, GenderType gender)
         {
             this.Name = name;
             this.Brand = brand;
             this.Price = price;
-            this.Gender = gender;
-            this.Ingredients = ingredients;
+            this.Gender = gender;            
         }
 
-        public string Print()
+        public virtual string Print()
         {
-            throw new System.NotImplementedException();
+            return $"#{this.Name} {this.Brand}\r\n #Price: ${this.Price}\r\n #Gender: {this.Gender}";
+            
         }
     }
 }

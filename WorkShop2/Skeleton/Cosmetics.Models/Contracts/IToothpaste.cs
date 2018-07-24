@@ -5,7 +5,7 @@
     public interface IToothpaste : IProduct
     {
 
-        string Ingredients { get; }
+        IList<string> Ingredients { get; }
 
     }
 }

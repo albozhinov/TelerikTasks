@@ -1,11 +1,12 @@
 ﻿using Bytes2you.Validation;
+using Cosmetics.Common;
 using Cosmetics.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Cosmetics.Cart
 {
-    public class ShoppingCart
+    public class ShoppingCart : IShoppingCart
     {
         private readonly ICollection<IProduct> productList;
 
@@ -43,6 +44,26 @@ namespace Cosmetics.Cart
         public decimal TotalPrice()
         {
             return this.productList.Sum(x => x.Price);
+        }
+
+        public ICategory CreateCategory(string name)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IShampoo CreateShampoo(string name, string brand, decimal price, GenderType gender, uint milliliters, UsageType usage)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IToothpaste CreateToothpaste(string name, string brand, decimal price, GenderType gender, IList<string> ingredients)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IShoppingCart CreateShoppingCart()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
