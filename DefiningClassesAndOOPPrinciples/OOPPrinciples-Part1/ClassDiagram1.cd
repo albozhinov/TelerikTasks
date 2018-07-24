@@ -10,37 +10,34 @@
   <Class Name="OOPPrinciples_Part1.Student">
     <Position X="7.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAEAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Student.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="OOPPrinciples_Part1.Teacher">
     <Position X="5.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAI=</HashCode>
+      <HashCode>AAQAAAAEAAAAYAAAAGAAAEAAAAAAAAAAAAAEAAAAAAI=</HashCode>
       <FileName>Teacher.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="OOPPrinciples_Part1.School" Collapsed="true">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAEAAEAAAABAABAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>School.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="OOPPrinciples_Part1.Disciplines">
     <Position X="2.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAYIAAAGCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAEAAAAYAAAAGAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Disciplines.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="OOPPrinciples_Part1.Classes" Collapsed="true">
-    <Position X="6.25" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAASAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes.cs</FileName>
-    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

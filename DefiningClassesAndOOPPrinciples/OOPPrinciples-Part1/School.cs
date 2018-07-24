@@ -1,35 +1,52 @@
-﻿using System;
+﻿using Problem1SchoolCLasses.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OOPPrinciples_Part1
 {
     //In the school there are classes of students.
-    class School
+    class School : IComment
     {
-        private List<Classes> schoolClasses;
+        // Fields
+        private string name;
+        private List<Class> classes;
+        private string comment;
 
-        public List<Classes> SchoolClasses
+        // Constructors
+        public School()
         {
-            get {return new List<Classes>(this.schoolClasses); }
+            this.classes = new List<Class>();
+        }
+
+        public School(string name)
+            : this()
+        {
+            this.Name = name;
+        }
+
+        // Properties
+        public string Name
+        {
+            get => this.name;
             set
             {
-                if (value == null)
+                if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException();
+                    throw new ArgumentException();
                 }
-                this.schoolClasses = value;
+                this.name = value;
             }
         }
 
-        public School()
+        public List<Class> Classes { get => new List<Class>(this.classes); }        
+
+        public string Comment { get => this.comment; set => this.comment = value; }
+
+       // Methods
+       public void AddClass(Class newClass)
         {
-            this.schoolClasses = new List<Classes>();
-        }
-        public School(List<Classes> myClasses)
-            :this()
-        {
-            this.schoolClasses = myClasses;
+            this.classes.Add(newClass);
         }
     }
 }

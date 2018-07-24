@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOPPrinciples_Part1
 {
-    public class Person : Classes
+    public class Person
     {
         protected string name;
 
@@ -13,7 +13,7 @@ namespace OOPPrinciples_Part1
             get { return this.name; }
             set
             {
-                if (value == null || value == "")
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException();
                 }
