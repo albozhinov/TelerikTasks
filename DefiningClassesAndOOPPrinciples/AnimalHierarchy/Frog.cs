@@ -6,15 +6,15 @@ namespace AnimalHierarchy
 {
     class Frog : Animal
     {
+        public Frog(string name, int age)
+            : base(name, age)
+        {
 
-
-
-
-
+        }
 
         public override void Sound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Croak!");
         }
     }
 }

@@ -4,13 +4,17 @@ using System.Text;
 
 namespace AnimalHierarchy
 {
-    class Tomcat : Animal
+    class Tomcat : Cat
     {
-
+        public Tomcat(string name, int age)
+            : base(name, age)
+        {
+            this.Gender = Sex.male;
+        }
 
         public override void Sound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Meow - Meow!");
         }
     }
 }

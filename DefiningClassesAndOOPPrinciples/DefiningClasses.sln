@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustPopcorn", "JustPopcorn\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningClasses-Part2", "DefiningClasses-Part2\DefiningClasses-Part2.csproj", "{DCE282BC-D57E-41C4-8F1D-1FB06131BCA7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPPrinciples-Part1", "OOPPrinciples-Part1\OOPPrinciples-Part1.csproj", "{5C5C85B9-9AF1-40C0-8CD4-738CF1D2746D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem1SchoolCLasses", "OOPPrinciples-Part1\Problem1SchoolCLasses.csproj", "{5C5C85B9-9AF1-40C0-8CD4-738CF1D2746D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalHierarchy", "AnimalHierarchy\AnimalHierarchy.csproj", "{536AEB42-531D-4499-947C-243132219BB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3AnimalHierarchy", "AnimalHierarchy\Problem3AnimalHierarchy.csproj", "{536AEB42-531D-4499-947C-243132219BB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

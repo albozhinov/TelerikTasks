@@ -6,10 +6,12 @@ namespace AnimalHierarchy
 {
     public abstract class Animal : ISound
     {
+        // Fields
         private int age;
         private string name;
         private Sex gender;
 
+        // Properties
         public int Age
         {
             get => this.age;
@@ -40,13 +42,13 @@ namespace AnimalHierarchy
             }
         }
 
-        public string Gender
+        public Sex Gender
         {
-            get => this.gender.ToString();
+            get => this.gender;
             set
             {
                 Sex sexParsed;
-                if (!Enum.TryParse(value, out sexParsed))
+                if (!Enum.TryParse(value.ToString(), out sexParsed))
                 {
                     throw new ArgumentException();
                 }
@@ -54,7 +56,26 @@ namespace AnimalHierarchy
             }
             
         }
-        
+
+        // Constructors
+
+        public Animal(string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;            
+        }
+
+        public Animal(string name, int age, Sex gender)
+            : this(name, age)
+        {
+            this.Gender = gender;
+        }
+
         public abstract void Sound();    
+
+        public virtual string Print()
+        {
+            return $"#Animal: {this.Name}\r\n #Age: {this.Age}\r\n #Sex: {this.Gender}";
+        }
     }
 }
