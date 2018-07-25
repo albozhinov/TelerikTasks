@@ -1,6 +1,7 @@
 ﻿using Problem1SchoolCLasses.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace OOPPrinciples_Part1
 {
@@ -59,7 +60,29 @@ namespace OOPPrinciples_Part1
         public void AddStudent(Student student)
         {
             this.students.Add(student);
-        }       
+        } 
+        
+        public string Print()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($" #Class identifier: {this.TextIdentifier}");
+            sb.AppendLine("  #Teachers:");
+
+            foreach (var teacher in Teachers)
+            {
+                sb.AppendLine($"   -Name: {teacher.Name}\r\n   -Number of lectures: {teacher.CountOfLectures}\r\n   -Number of exercises: {teacher.CountOfExercises}\r\n   -Disciplines:\r\n    {teacher.Print()}");
+            }
+
+            sb.AppendLine("  #Students:");
+
+            foreach (var student in Students)
+            {
+                sb.AppendLine($"   -Name: {student.Name}, ID: {student.UniqueNumber};");
+            }
+
+            return sb.ToString();
+        }
 
     }
 }

@@ -30,11 +30,7 @@ namespace OOPPrinciples_Part1
             get => this.countOfLectures;
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException();
-                }
-                this.countOfLectures = value;
+                this.countOfLectures = MyDisciplines.Sum(x => x.CountOfLectures);
             }
         }
 
@@ -43,11 +39,7 @@ namespace OOPPrinciples_Part1
             get => this.countOfExercises;
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException();
-                }
-                this.countOfExercises = value;
+                this.countOfExercises = MyDisciplines.Sum(x => x.CountOfExercises);
             }
         }
 
@@ -57,6 +49,17 @@ namespace OOPPrinciples_Part1
         public void AddDiscipline(Disciplines disciplineName)
         {
             this.disciplines.Add(disciplineName);
-        }        
+        }
+        
+        public string Print()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var disc in MyDisciplines)
+            {
+                sb.AppendLine($"Name: {disc.Name}, Number of lectures: {disc.CountOfLectures}, Number of exercises: {disc.CountOfExercises};");
+            }
+            return sb.ToString();
+        }
     }
 }

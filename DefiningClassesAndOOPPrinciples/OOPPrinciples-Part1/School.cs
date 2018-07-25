@@ -48,5 +48,18 @@ namespace OOPPrinciples_Part1
         {
             this.classes.Add(newClass);
         }
+
+        public void Print()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(string.Format("#School: {0}", this.Name));
+
+            foreach (Class currClass in Classes)
+            {
+                sb.AppendLine(currClass.Print());
+            }
+            Console.WriteLine(sb);
+        }
     }
 }
