@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Logger\Demo.LoggingModule.csproj" />
+    <ProjectReference Include="..\Demo.RegistrationModule\Demo.RegistrationModule.csproj" />
+  </ItemGroup>
+
+</Project>

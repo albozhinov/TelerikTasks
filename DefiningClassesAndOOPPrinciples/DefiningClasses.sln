@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningClasses-Part2", "De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem1SchoolCLasses", "OOPPrinciples-Part1\Problem1SchoolCLasses.csproj", "{5C5C85B9-9AF1-40C0-8CD4-738CF1D2746D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3AnimalHierarchy", "AnimalHierarchy\Problem3AnimalHierarchy.csproj", "{536AEB42-531D-4499-947C-243132219BB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem3AnimalHierarchy", "AnimalHierarchy\Problem3AnimalHierarchy.csproj", "{536AEB42-531D-4499-947C-243132219BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2StudentsAndWorkers", "Problem2StudentsAndWorkers\Problem2StudentsAndWorkers.csproj", "{AAD0E47A-F76A-47E4-9D57-FAD1342A0A0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{536AEB42-531D-4499-947C-243132219BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536AEB42-531D-4499-947C-243132219BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536AEB42-531D-4499-947C-243132219BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD0E47A-F76A-47E4-9D57-FAD1342A0A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD0E47A-F76A-47E4-9D57-FAD1342A0A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD0E47A-F76A-47E4-9D57-FAD1342A0A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD0E47A-F76A-47E4-9D57-FAD1342A0A0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
