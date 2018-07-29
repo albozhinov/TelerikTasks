@@ -20,8 +20,14 @@ namespace Problem2StudentsAndWorkers
         public int Grade
         {
             get => this.grade;
-            set => this.grade = value;           
+            set
+            {
+                if (value < 2 || 6 < value)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                this.grade = value;
+            }         
         }
-
     }
 }

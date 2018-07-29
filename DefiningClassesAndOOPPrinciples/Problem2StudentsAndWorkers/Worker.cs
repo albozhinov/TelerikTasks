@@ -11,10 +11,11 @@ namespace Problem2StudentsAndWorkers
         private int workHoursPerDay;
 
         // Constructors
-        public Worker(string firstName, string lastName, decimal weekSalary)
+        public Worker(string firstName, string lastName, decimal weekSalary, int workHoursPerDay)
             : base(firstName, lastName)
         {
             this.WeekSalary = weekSalary;
+            this.WorkHoursPerDay = workHoursPerDay;
         }
 
         // Properties
