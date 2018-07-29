@@ -29,15 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09.FrequentNumber", "P09.F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hgasdghjasdghagsbd", "hgasdghjasdghagsbd\hgasdghjasdghagsbd.csproj", "{420A6E2E-9058-41EC-8926-3B8EC1DC0FD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10.FindSumInArray", "P10.FindSumInArray\P10.FindSumInArray.csproj", "{057A29C3-6BFA-4EBF-A23E-AB3A65552F7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10.FindSumInArray", "P10.FindSumInArray\P10.FindSumInArray.csproj", "{057A29C3-6BFA-4EBF-A23E-AB3A65552F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12.IndexOfLetters", "Proba11212\P12.IndexOfLetters.csproj", "{8B5EAB7F-AD94-4A60-9C28-24A22937E24F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12.IndexOfLetters", "Proba11212\P12.IndexOfLetters.csproj", "{8B5EAB7F-AD94-4A60-9C28-24A22937E24F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11.BinarySearch", "P11.BinarySearch\P11.BinarySearch.csproj", "{66C6CA4E-E22D-481F-8E0A-221DF42CE374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11.BinarySearch", "P11.BinarySearch\P11.BinarySearch.csproj", "{66C6CA4E-E22D-481F-8E0A-221DF42CE374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeToN", "PrimeToN\PrimeToN.csproj", "{A7CE573C-55FF-4D99-977E-9F35BDD52BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeToN", "PrimeToN\PrimeToN.csproj", "{A7CE573C-55FF-4D99-977E-9F35BDD52BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppearanceCount", "AppearanceCount\AppearanceCount.csproj", "{1840B663-827D-4EE0-B7CD-B04870DBB201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppearanceCount", "AppearanceCount\AppearanceCount.csproj", "{1840B663-827D-4EE0-B7CD-B04870DBB201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{5727B46E-422D-462A-9C51-A255B2044E34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{1840B663-827D-4EE0-B7CD-B04870DBB201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1840B663-827D-4EE0-B7CD-B04870DBB201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1840B663-827D-4EE0-B7CD-B04870DBB201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5727B46E-422D-462A-9C51-A255B2044E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5727B46E-422D-462A-9C51-A255B2044E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5727B46E-422D-462A-9C51-A255B2044E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5727B46E-422D-462A-9C51-A255B2044E34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
