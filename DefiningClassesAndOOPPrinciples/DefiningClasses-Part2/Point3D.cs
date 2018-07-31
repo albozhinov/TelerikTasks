@@ -1,33 +1,39 @@
 ﻿using System;
 
-
-struct Point3D
+public struct Point3D
 {
-    public int X { get; set; }
+    // Static Field
+    public static readonly Point3D startOfCordinateSystem = new Point3D(0, 0, 0);
 
-    public int Y { get; set; }
+    // Fields
+    private double x;
+    private double y;
+    private double z;   
 
-    public int Z { get; set; }
-
-    private static readonly int o;
-
-    public readonly int O
-    {
-        get { return this.o; }
-        set {; }
-    }
-
-    public Point3D(int x, int y, int z)
+    public Point3D(double x, double y, double z)
+        : this()
     {
         this.X = x;
         this.Y = y;
         this.Z = z;
-        //this.o = 
     }
 
+    // Properties
+    public double X { get => this.x; set => this.x = value; }
+
+    public double Y { get => this.y; set => this.y = value; }
+
+    public double Z { get => this.z; set => this.z = value; }
+
+    public static Point3D StartOfCordinateSystem
+    {
+        get { return startOfCordinateSystem; }
+    }
+
+    // Method override
     public override string ToString()
     {
-        return string.Format($"3D-coordinate: X = {this.X}, Y = {this.Y}, Z = {this.Z}");
+        return string.Format($"3D-cordinate: X = {this.X}, Y = {this.Y}, Z = {this.Z}");
     }
 
 }
