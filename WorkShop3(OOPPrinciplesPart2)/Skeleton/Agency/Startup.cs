@@ -6,7 +6,7 @@ namespace Agency
     {
         public static void Main(string[] args)
         {
-            // Singleton design pattern
+            // Singleton design pattern!
             // Ensures that there is only one instance of Engine in existance
             // Yo are already familiar with it, right?
             var engine = Engine.Instance;
