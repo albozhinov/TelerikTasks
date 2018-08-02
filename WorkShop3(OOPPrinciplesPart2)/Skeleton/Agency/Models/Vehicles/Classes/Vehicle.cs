@@ -66,7 +66,11 @@ namespace Agency.Models.Vehicles.Classes
 
         public override string ToString()
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"\r\nPassenger capacity: {PassengerCapacity}");
+            sb.Append($"\r\nPrice per kilometer: {PricePerKilometer}");
+            sb.Append($"\r\nVehicle type: {Type.ToString()}");
+            return sb.ToString();
         }        
     }
 }

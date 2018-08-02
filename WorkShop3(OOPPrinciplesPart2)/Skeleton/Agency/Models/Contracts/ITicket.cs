@@ -7,5 +7,7 @@
         IJourney Journey { get; }
 
         decimal CalculatePrice();
+
+        string ToString();
     }
 }

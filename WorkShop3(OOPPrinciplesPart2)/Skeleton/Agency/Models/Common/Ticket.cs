@@ -1,6 +1,5 @@
 ﻿using Agency.Models.Contracts;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Agency.Models.Common
@@ -46,7 +45,11 @@ namespace Agency.Models.Common
 
         public override string ToString()
         {
-            return $"Ticket ----\r\nDestination: {this.Journey.Destination}\r\nPrice: {this.CalculatePrice()}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Ticket ----");
+            sb.AppendLine($"Destination: {this.Journey.Destination}");
+            sb.Append($"Price: {this.CalculatePrice()}");
+            return sb.ToString();
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Agency.Models.Contracts;
 using Agency.Models.Vehicles.Contracts;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Agency.Models.Common
@@ -89,7 +88,14 @@ namespace Agency.Models.Common
 
         public override string ToString()
         {
-            return $"Journey ----\r\nStart location: {this.StartLocation}\r\nDestination: {this.Destination}\r\nDistance: {this.Distance}\r\nVehicle type: {this.Vehicle.Type.ToString()}\r\nTravel costs: {this.CalculateTravelCosts()}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Journey ----");
+            sb.AppendLine($"Start location: {this.StartLocation}");
+            sb.AppendLine($"Destination: {this.Destination}");
+            sb.AppendLine($"Distance: {this.Distance}");
+            sb.AppendLine($"Vehicle type: {this.Vehicle.Type.ToString()}");
+            sb.Append($"Travel costs: {this.CalculateTravelCosts()}");
+            return sb.ToString();
         }
     }
 }

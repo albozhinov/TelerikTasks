@@ -24,11 +24,7 @@ namespace Agency.Commands.Creating
             {
                 return "There are no registered vehicles.";
             }
-
-            //foreach (var item in vehicles)
-            //{
-
-            //}
+            
             return string.Join(Environment.NewLine + "####################" + Environment.NewLine, vehicles);
         }
     }

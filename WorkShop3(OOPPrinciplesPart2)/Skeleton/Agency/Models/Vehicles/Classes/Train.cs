@@ -8,8 +8,7 @@ namespace Agency.Models.Vehicles.Classes
     public class Train : Vehicle, ITrain
     {
         // Field
-        private int carts;
-        private int passengerCapacity;
+        private int carts;       
 
         // Constructors
         public Train(int passangerCpacity, VehicleType type, decimal pricePerKilometer, int carts)
@@ -33,21 +32,25 @@ namespace Agency.Models.Vehicles.Classes
         }
         public override int PassengerCapacity
         {
-            get => this.passengerCapacity;
+            get => base.PassengerCapacity;
             set
             {
                 if (value < 30 || 150 < value)
                 {
                     throw new ArgumentException("A train cannot have less than 30 passengers or more than 150 passengers.");
                 }
-                this.passengerCapacity = value;
+                base.PassengerCapacity = value;
             }
         }
 
         // Method
         public override string ToString()
         {
-            return $"Train ----\r\nPassenger capacity: {this.PassengerCapacity}\r\nPrice per kilometer: {this.PricePerKilometer}\r\nVehicle type: {this.Type.ToString()}\r\nCarts amount: {this.Carts}";
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Train ----");
+            sb.Append(base.ToString());
+            sb.Append($"\r\nCarts amount: {this.Carts}");
+            return sb.ToString();
         }
     }
 }

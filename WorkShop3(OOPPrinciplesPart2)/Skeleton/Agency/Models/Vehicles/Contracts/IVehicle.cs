@@ -8,7 +8,6 @@
 
         decimal PricePerKilometer { get; }
 
-        string ToString();
-        
+        string ToString();        
     }
 }

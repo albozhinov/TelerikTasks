@@ -13,5 +13,7 @@ namespace Agency.Models.Contracts
         IVehicle Vehicle { get; }
 
         decimal CalculateTravelCosts();
+
+        string ToString();
     }
 }

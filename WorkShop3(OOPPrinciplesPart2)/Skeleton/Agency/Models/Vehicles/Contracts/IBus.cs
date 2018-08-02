@@ -2,6 +2,6 @@
 {
     public interface IBus : IVehicle
     {
-      
+        
     }
 }

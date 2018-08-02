@@ -7,9 +7,6 @@ namespace Agency.Models.Vehicles.Classes
 {
     class Bus : Vehicle, IBus
     {
-        // Fields
-        private int passengerCapacity;
-
         // Constructor
         public Bus(int passangerCapacity, VehicleType type, decimal pricePerKilometer)
             : base(passangerCapacity, type, pricePerKilometer)
@@ -20,21 +17,24 @@ namespace Agency.Models.Vehicles.Classes
         // Properties
         public override int PassengerCapacity
         {
-            get => this.passengerCapacity;
+            get => base.PassengerCapacity;
             set
             {
                 if (value < 10 || 50 < value)
                 {
                     throw new ArgumentException("A bus cannot have less than 10 passengers or more than 50 passengers.");
                 }
-                this.passengerCapacity = value;
+                base.PassengerCapacity = value;
             }
         }
 
         // Method
         public override string ToString()
         {
-            return $"Bus ----\r\nPassenger capacity: {this.PassengerCapacity}\r\nPrice per kilometer: {this.PricePerKilometer}\r\nVehicle type: {this.Type.ToString()}";
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Bus ----");
+            sb.Append(base.ToString());
+            return sb.ToString();
         }
     }
 }

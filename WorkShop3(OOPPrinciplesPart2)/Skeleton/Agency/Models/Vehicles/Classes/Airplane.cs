@@ -1,6 +1,4 @@
 ﻿using Agency.Models.Vehicles.Contracts;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Agency.Models.Vehicles.Classes
@@ -27,7 +25,11 @@ namespace Agency.Models.Vehicles.Classes
         // Method
         public override string ToString()
         {
-            return $"Airplane ----\r\nPassenger capacity: {this.PassengerCapacity}\r\nPrice per kilometer: {this.PricePerKilometer}\r\nVehicle type: {this.Type.ToString()}\r\nHas free food: {this.HasFreeFood}";
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Airplane ----");
+            sb.Append(base.ToString());
+            sb.Append($"\r\nHas free food: {this.HasFreeFood}");
+            return sb.ToString();
         }
     }
 }

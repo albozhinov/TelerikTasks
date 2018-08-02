@@ -1,5 +1,4 @@
-﻿using System;
-using Agency.Core.Contracts;
+﻿using Agency.Core.Contracts;
 using Agency.Models.Common;
 using Agency.Models.Contracts;
 using Agency.Models.Vehicles.Classes;
