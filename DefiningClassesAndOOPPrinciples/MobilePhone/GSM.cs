@@ -20,10 +20,10 @@ namespace MobilePhone
 
         public List<Call> CallHistory
         {
-            get { return this.callhistory; }
-            set
+            get { return new List<Call>(this.callhistory); }
+            private set
             {
-                this.callhistory.Add(value);
+                this.callhistory = value;
             }
         }
 
@@ -126,9 +126,9 @@ namespace MobilePhone
             this.Owner = owner;
         }
 
-        public List<Call> AddCall(Call newCall)
+        public void AddCall(Call newCall)
         {
-            return this.CallHistory.Add(newCall);
+             this.CallHistory.Add(newCall);
         }
 
         public List<Call> RemoveCall(List<Call> callhistory, Call callToRemove)
