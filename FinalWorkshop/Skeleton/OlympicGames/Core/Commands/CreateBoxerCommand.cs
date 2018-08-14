@@ -13,6 +13,7 @@ namespace OlympicGames.Core.Commands
         public CreateBoxerCommand(IList<string> commandLine) 
             : base(commandLine)
         {
+
         }
 
         public override string Execute()

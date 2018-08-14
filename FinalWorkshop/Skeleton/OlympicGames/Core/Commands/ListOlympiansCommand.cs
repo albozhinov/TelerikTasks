@@ -9,12 +9,13 @@ namespace OlympicGames.Core.Commands
 {
     public class ListOlympiansCommand : Command, ICommand
     {
-        private string key = "firstame";
+        private string key = "firstname";
         private string order = "asc";
 
         public ListOlympiansCommand(IList<string> commandParameters)
             : base(commandParameters)
-        {
+        {         
+          
             if (commandParameters.Count == 1)
             {
                 this.key = commandParameters[0];                
@@ -43,9 +44,16 @@ namespace OlympicGames.Core.Commands
         public override string Execute()
         {
             var stringBuilder = new StringBuilder();
-            var sorted = this.Committee.Olympians.ToList();
+            var sorted = this.Committee.Olympians.ToList();        
 
-            stringBuilder.AppendLine(string.Format("Sorted by [key: {0}] in [order: {1}]", this.key, this.order));
+            if (sorted.Count == 0)
+            {
+                stringBuilder.AppendLine(string.Format("NO OLYMPIANS ADDED"));
+            }
+            else
+            {
+                stringBuilder.AppendLine(string.Format("Sorted by [key: {0}] in [order: {1}]", this.key, this.order));
+            }           
 
             if (this.order.ToLower().Trim() == "desc")
             {
