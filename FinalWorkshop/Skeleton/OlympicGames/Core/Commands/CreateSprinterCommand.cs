@@ -47,7 +47,7 @@ namespace OlympicGames.Core.Commands
             }
 
             var sprinter = this.Factory.CreateSprinter(firstName, lastName, country, records);
-            this.Committee.Olympians.Add(sprinter);          
+            this.Committee.Olympians.Add(sprinter);           
             
             return $"Created Sprinter{sprinter.ToString()}";
         }

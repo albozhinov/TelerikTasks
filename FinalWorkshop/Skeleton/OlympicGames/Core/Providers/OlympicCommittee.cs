@@ -7,20 +7,28 @@ namespace OlympicGames.Core.Providers
 {
     public class OlympicCommittee : IOlympicCommittee
     {
-        private static readonly OlympicCommittee instance = new OlympicCommittee();
+        private static OlympicCommittee instance;
 
         private OlympicCommittee()
         {
             this.Olympians = new List<IOlympian>();
         }
 
-        public ICollection<IOlympian> Olympians { get; private set; }
+        public ICollection<IOlympian> Olympians { get; set; }
 
         public static OlympicCommittee Instance
         {
             get
             {
+                if (instance == null)
+                {
+                    instance = new OlympicCommittee();
+                }
                 return instance;
+            }
+            set
+            {
+                instance = value;
             }
         }
     }

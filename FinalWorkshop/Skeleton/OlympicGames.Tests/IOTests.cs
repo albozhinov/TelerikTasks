@@ -147,8 +147,10 @@ namespace Agency.Tests
             var instance = typeof(Engine).GetField("instance", BindingFlags.Static | BindingFlags.NonPublic);
             instance.SetValue(null, null);
 
-            Engine.Instance.Run();
+            OlympicGames.Core.Providers.OlympicCommittee.Instance = null;
 
+            Engine.Instance.Run();
+            
             var expected = testOutput.ReadToEnd().Trim();
             var actual = programOutput.ToString().Trim();
 
