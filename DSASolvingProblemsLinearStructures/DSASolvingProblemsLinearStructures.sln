@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solve!", "Solve!\Solve!.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionDemo", "RecursionDemo\RecursionDemo.csproj", "{6F91BDC4-A709-4800-BCF8-3E029010C159}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4FindTheLongestSubsequence", "Task4FindTheLongestSubsequence\Task4FindTheLongestSubsequence.csproj", "{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task4FindTheLongestSubsequence", "Task4FindTheLongestSubsequence\Task4FindTheLongestSubsequence.csproj", "{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5RemovesAllNegativeNumbers", "Task5RemovesAllNegativeNumbers\Task5RemovesAllNegativeNumbers.csproj", "{10277153-3766-415E-8872-CBFF8867EF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6RemovesNumbersOccurOddTimes", "Task6RemovesNumbersOccurOddTimes\Task6RemovesNumbersOccurOddTimes.csproj", "{562E144A-F188-46E1-86E5-8FD27D2F1736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10277153-3766-415E-8872-CBFF8867EF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10277153-3766-415E-8872-CBFF8867EF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10277153-3766-415E-8872-CBFF8867EF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10277153-3766-415E-8872-CBFF8867EF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
