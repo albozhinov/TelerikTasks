@@ -27,9 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionDemo", "RecursionD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task4FindTheLongestSubsequence", "Task4FindTheLongestSubsequence\Task4FindTheLongestSubsequence.csproj", "{60AE15AB-E43C-4958-A1B5-66AC89BD0DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5RemovesAllNegativeNumbers", "Task5RemovesAllNegativeNumbers\Task5RemovesAllNegativeNumbers.csproj", "{10277153-3766-415E-8872-CBFF8867EF2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5RemovesAllNegativeNumbers", "Task5RemovesAllNegativeNumbers\Task5RemovesAllNegativeNumbers.csproj", "{10277153-3766-415E-8872-CBFF8867EF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6RemovesNumbersOccurOddTimes", "Task6RemovesNumbersOccurOddTimes\Task6RemovesNumbersOccurOddTimes.csproj", "{562E144A-F188-46E1-86E5-8FD27D2F1736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task6RemovesNumbersOccurOddTimes", "Task6RemovesNumbersOccurOddTimes\Task6RemovesNumbersOccurOddTimes.csproj", "{562E144A-F188-46E1-86E5-8FD27D2F1736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task7Find", "Task7Find\Task7Find.csproj", "{C6F1E0AA-8039-498B-8808-64FAC0B44A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task8FindTheMajorant", "Task8FindTheMajorant\Task8FindTheMajorant.csproj", "{F0F7C677-3C70-4958-94A9-C979DE0193CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562E144A-F188-46E1-86E5-8FD27D2F1736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F1E0AA-8039-498B-8808-64FAC0B44A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F1E0AA-8039-498B-8808-64FAC0B44A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F1E0AA-8039-498B-8808-64FAC0B44A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F1E0AA-8039-498B-8808-64FAC0B44A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F7C677-3C70-4958-94A9-C979DE0193CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F7C677-3C70-4958-94A9-C979DE0193CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F7C677-3C70-4958-94A9-C979DE0193CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F7C677-3C70-4958-94A9-C979DE0193CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
