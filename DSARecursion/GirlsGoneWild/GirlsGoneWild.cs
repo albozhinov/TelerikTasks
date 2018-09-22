@@ -1,40 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace GirlsGoneWild
 {
     class GirlsGoneWild
     {
-        private static int kShirts;
-        private static string lSkirts;
-        private static int girls;
-        private static int counter;
+        private static int number;
+        private static char[] letters;
+        private static int girls;        
         private static StringBuilder sb = new StringBuilder();
+        private static SortedSet<string> allCombinations;
+        private static bool[] isTrue = new bool[letters.Length];
 
         static void Main(string[] args)
         {
-            kShirts = 3;        //int.Parse(Console.ReadLine());
-            lSkirts = "baca";   //Console.ReadLine();
-            girls = 2;          //int.Parse(Console.ReadLine());
-
-            Girls(0);
+            number = 3;                       //int.Parse(Console.ReadLine());
+            letters = "aabc".ToCharArray();   //Console.ReadLine(); Sort
+            girls = 2;                        //int.Parse(Console.ReadLine());
+            
+            NumberComb(0, 0, number);            
         }
 
-        private static void Girls(int index)
+        public static void NumberComb(int index, int start, int end)
         {
-            if (index == lSkirts.Length)
-            {
-                counter++;
-                sb.AppendLine();
+            if (index == end)
+            {                
                 return;
             }
 
-            for (int i = 0; i < girls; i++)
+            for (int i = start; i <= end; i++)
             {
-                Girls(index + 1);
+                var comb = // Виж как ще го направиш за да може тук да се генерира комбинацията от число и буква!!!
+
+                NumberComb(index + 1, start + 1, end); 
+                start++;
             }
-
-
         }
     }
 }

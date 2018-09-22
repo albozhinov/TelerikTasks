@@ -21,9 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesInBottle", "Message
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GirlsGoneWild", "GirlsGoneWild\GirlsGoneWild.csproj", "{CCFEEADB-FB67-4144-A7EA-734FA0ED2E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5GenerateAndPrintAllOrderedKElements", "Task5GenerateAndPrintAllOrderedKElements\Task5GenerateAndPrintAllOrderedKElements.csproj", "{798DA711-4F91-43A6-9D62-D25E74A0B655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5GenerateAndPrintAllOrderedKElements", "Task5GenerateAndPrintAllOrderedKElements\Task5GenerateAndPrintAllOrderedKElements.csproj", "{798DA711-4F91-43A6-9D62-D25E74A0B655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6PrintAllElementsPermutanions", "Task6PrintAllElementsPermutanions\Task6PrintAllElementsPermutanions.csproj", "{59B8ABB6-3F82-4FDA-BE59-6F24B2F31454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task6PrintAllElementsPermutanions", "Task6PrintAllElementsPermutanions\Task6PrintAllElementsPermutanions.csproj", "{59B8ABB6-3F82-4FDA-BE59-6F24B2F31454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task7AllPathsInMatrix", "Task7AllPathsInMatrix\Task7AllPathsInMatrix.csproj", "{F6102DB2-A680-483D-BD55-90E8E4DB535C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password", "Password\Password.csproj", "{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{59B8ABB6-3F82-4FDA-BE59-6F24B2F31454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59B8ABB6-3F82-4FDA-BE59-6F24B2F31454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59B8ABB6-3F82-4FDA-BE59-6F24B2F31454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6102DB2-A680-483D-BD55-90E8E4DB535C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6102DB2-A680-483D-BD55-90E8E4DB535C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6102DB2-A680-483D-BD55-90E8E4DB535C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6102DB2-A680-483D-BD55-90E8E4DB535C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
