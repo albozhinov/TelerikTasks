@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSystem", "OrderSystem\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRanking", "PlayerRanking\PlayerRanking.csproj", "{409AA937-55E8-4149-9033-A06883A110E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork", "UnitOfWork\UnitOfWork.csproj", "{38196847-78D2-471C-9771-128A64140059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWork", "UnitOfWork\UnitOfWork.csproj", "{38196847-78D2-471C-9771-128A64140059}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddNumber", "OddNumber\OddNumber.csproj", "{0E37E635-EA3B-490B-89E7-2489E9FDD090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddNumber", "OddNumber\OddNumber.csproj", "{0E37E635-EA3B-490B-89E7-2489E9FDD090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking", "Cooking\Cooking.csproj", "{7FACB8C8-280B-4554-9D40-E4A7FF7F3A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0E37E635-EA3B-490B-89E7-2489E9FDD090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E37E635-EA3B-490B-89E7-2489E9FDD090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E37E635-EA3B-490B-89E7-2489E9FDD090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FACB8C8-280B-4554-9D40-E4A7FF7F3A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FACB8C8-280B-4554-9D40-E4A7FF7F3A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FACB8C8-280B-4554-9D40-E4A7FF7F3A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FACB8C8-280B-4554-9D40-E4A7FF7F3A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

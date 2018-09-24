@@ -38,6 +38,6 @@ namespace Task4GeneratePermutations
                     used[i] = false;
                 }                
             }
-        }
+        }       
     }
 }

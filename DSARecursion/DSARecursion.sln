@@ -27,7 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task6PrintAllElementsPermut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task7AllPathsInMatrix", "Task7AllPathsInMatrix\Task7AllPathsInMatrix.csproj", "{F6102DB2-A680-483D-BD55-90E8E4DB535C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password", "Password\Password.csproj", "{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Password", "Password\Password.csproj", "{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numerology", "Numerology\Numerology.csproj", "{F02F70E4-D766-4FB5-B056-53AA80919D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveSukoku", "SolveSukoku\SolveSukoku.csproj", "{3928B4B1-E195-4E4B-A67A-64CFC9F6CF03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C9CD0F0-B9BE-41E1-8397-34A927F4A6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02F70E4-D766-4FB5-B056-53AA80919D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02F70E4-D766-4FB5-B056-53AA80919D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02F70E4-D766-4FB5-B056-53AA80919D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02F70E4-D766-4FB5-B056-53AA80919D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3928B4B1-E195-4E4B-A67A-64CFC9F6CF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3928B4B1-E195-4E4B-A67A-64CFC9F6CF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3928B4B1-E195-4E4B-A67A-64CFC9F6CF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3928B4B1-E195-4E4B-A67A-64CFC9F6CF03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
