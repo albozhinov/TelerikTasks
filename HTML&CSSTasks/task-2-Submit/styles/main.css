@@ -1,0 +1,45 @@
+form {
+    border: 1px solid #F2F2F2;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: #F2F2F2
+}
+label {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-top: 30px 
+}
+input {
+    width: 90%;
+    height: 40px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    border-radius: 5px
+}
+select {
+    width: 90%;
+    height: 40px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+button {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #E99529;
+    width: 90%;
+    height: 40px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    border-radius: 5px;
+}

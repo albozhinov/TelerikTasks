@@ -1,0 +1,116 @@
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    width: 250px;
+    height: 485px;
+    border: 2px solid white;
+    text-align: center;
+    background-color: #E6E6E6;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+#avatar {
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+[src] {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 200px
+}
+
+#main-info {
+    line-height: 12px;
+}
+
+h2 {
+    color: grey;
+    font-size: 18px
+}
+
+#label {
+    display: inline-block;
+    color: white;
+    border: 1px solid #6CC644;
+    background-color: #6CC644;
+    border-width: 3px;
+    border-radius: 3px;
+    font-size: 12px
+}
+
+a {
+    color: #60B1DD;
+    text-decoration: none;
+    font-size: 14px
+}
+
+#details {
+    font-size: 14px;
+    line-height: 1px
+}
+
+.octicon {
+    color: #9A9999;
+}
+
+p {
+    display: inline-block;
+}
+
+#git-info {
+    word-spacing: 20px;
+}
+
+    #git-info > .followers, .starred, .following {
+        display: inline-block
+    }
+
+        #git-info > .followers > .digits {
+            color: #4078C0;
+            font-size: 25px;
+            font-weight: bold            
+        }
+
+        #git-info > .followers > .text {
+            color: #A19078;
+            font-size: 10px;
+            vertical-align: text-top
+        }
+
+    #git-info > .starred > .digits {
+        color: #4078C0;
+        font-size: 25px;
+        font-weight: bold
+    }
+
+    #git-info > .starred > .text {
+        color: #A19078;
+        font-size: 10px;
+        vertical-align: text-top
+    }
+
+    #git-info > .following > .digits {
+        color: #4078C0;
+        font-size: 25px;
+        font-weight: bold
+    }
+
+    #git-info > .following > .text {
+        color: #A19078;
+        font-size: 10px;
+        vertical-align: text-top
+    }
+
+hr {
+    vertical-align: bottom;
+    border: 1px solid #EEEEEE;
+    width: 90%
+}
+
