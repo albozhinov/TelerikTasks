@@ -1,0 +1,47 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>This is the home page!</h1>
+
+<div class="clearfix">
+
+    <div class="row col-md-6">
+
+        <h2 style="font-size: 30px; font-weight: bold">Teams</h2>
+        @{ foreach (var team in Model.Teams)
+            {
+                <div>
+                    <h3 style="font-weight: bold">
+                        <a asp-controller="Team" asp-action="Details" asp-route-id="@team.Id">@team.Name - @team.Players.Count players</a>                       
+                    </h3>
+                    <hr />
+                </div>
+            }
+        }
+    </div>
+
+    <div class="row col-md-6">
+        <h2 style="font-size: 30px; font-weight: bold">Players</h2>
+        @{ foreach (var player in Model.Players)
+            {
+                <div>
+
+                    <h3 style="font-weight: bold">
+                        <a asp-controller="Player" asp-action="Details" asp-route-id="@player.Id">@player.FirstName @player.LastName</a>
+                    </h3>
+                    Goals scored: @player.Goals | Plays for: @player.Team?.Name
+                    <hr />
+                </div>
+            }
+        }
+    </div>
+</div>
+
+
+
+
+
+

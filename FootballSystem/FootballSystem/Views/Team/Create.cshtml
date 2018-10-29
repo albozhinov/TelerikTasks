@@ -1,0 +1,24 @@
+﻿@model TeamVIewModel
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create new team</h2>
+
+<form asp-controller="Team" asp-action="Create" method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Name"></label>
+        <input asp-for="@Model.Name" class="form-control" />
+        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+    </div>    
+
+    <button type="submit" style="border-radius: 5px 5px; background-color: #5CB85C; color: white; font-size: 16px; padding: 10px 10px">Create new team</button>
+</form>
+@section Scripts  {
+    @Html.Partial("_ValidationScriptsPartial")
+}

@@ -1,0 +1,29 @@
+﻿@model PlayerViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create new player</h2>
+
+<form asp-controller="Player" asp-action="Create" method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="@Model.FirstName"></label>
+        <input asp-for="@Model.FirstName" class="form-control" />
+        <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.LastName"></label>
+        <input asp-for="@Model.LastName" class="form-control" />
+        <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+    </div>
+
+    <button type="submit" style="border-radius: 5px 5px; background-color: #5CB85C; color: white; font-size: 16px; padding: 10px 10px">Create new player</button>
+</form>
+@section Scripts  {
+    @Html.Partial("_ValidationScriptsPartial")
+}

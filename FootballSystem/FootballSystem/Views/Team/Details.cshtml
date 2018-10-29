@@ -1,0 +1,17 @@
+﻿@model TeamVIewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h1>@Model.Name</h1>
+
+    @{
+        foreach (var player in Model.Players)
+        {
+            <p style="font-size: 20px">Plays for: @player.FirstName @player.LastName | Goals scored: @player.Goals</p>
+        }
+    }
+</div>
+

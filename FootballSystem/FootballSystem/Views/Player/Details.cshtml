@@ -1,0 +1,11 @@
+﻿@model PlayerViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.FirstName @Model.LastName</h1>
+<p style="font-size: 20px">
+    Plays for: @Model.Team?.Name | Goals scored: @Model.Goals
+</p>
+
